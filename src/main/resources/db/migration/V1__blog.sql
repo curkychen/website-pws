@@ -1,0 +1,5 @@
+CREATE TABLE blog (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(1024),
+  content TEXT
+);

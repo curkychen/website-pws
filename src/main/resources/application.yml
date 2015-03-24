@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: cf
+---
+spring:
+  profiles: local
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/your_db_name?characterEncoding=utf8
+    username: root
+    password: 123456
+---
+spring:
+  profiles: cf
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://us-cdbr-iron-east-02.cleardb.net:3306/ad_fc3bcbbe04cd815?characterEncoding=utf8&autoReconnect=true
+    username: b3ee96f3e56e33
+    password: bde23ca0
+    max-active: 2

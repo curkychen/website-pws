@@ -1,0 +1,7 @@
+---
+applications:
+  - name: your_app_id
+    buildpack: java_buildpack
+    path: target/website-pws-0.0.1-SNAPSHOT.jar
+    services:
+      - mysql0
